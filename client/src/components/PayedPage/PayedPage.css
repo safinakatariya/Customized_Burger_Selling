@@ -1,0 +1,34 @@
+.payed-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.order-details, .receipt {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: left;
+}
+
+.order-list, .receipt-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-item, .receipt-item {
+  margin-bottom: 10px;
+}
+
+.confirm-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,95 @@
+/* Root Variables */
+:root {
+  --primary-color: #ff5722;
+  --secondary-color: #f9fafc;
+  --text-color: #333;
+  --background-color: #fff;
+  --font-family: 'Arial', sans-serif;
+  --border-radius: 8px;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow-x: hidden;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: darken(var(--primary-color), 10%);
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}

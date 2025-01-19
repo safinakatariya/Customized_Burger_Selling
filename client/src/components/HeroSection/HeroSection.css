@@ -1,0 +1,88 @@
+:root {
+  --primary-color: #ff5722;
+  --secondary-color: #f9fafc;
+  --text-color: #333;
+  --background-color: #fff;
+  --font-family: 'Arial', sans-serif;
+  --border-radius: 10px;
+  --max-width: 1200px;
+  --image-width: 350px;
+  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+  background: var(--secondary-color);
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-text span {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.hero-text p {
+  margin: 10px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.hero-text h3 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.hero-text h3 span {
+  font-weight: bold;
+  color: #000;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: var(--image-width);
+  border-radius: var(--border-radius);
+  object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero-image img {
+    width: 90%;
+  }
+}

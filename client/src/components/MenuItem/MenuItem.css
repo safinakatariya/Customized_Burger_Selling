@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #ff5722;
+    --secondary-color: #f9fafc;
+    --text-color: #333;
+    --description-color: #777;
+    --hover-color: #333;
+    --button-background-color: #ff5722;
+    --button-hover-color: #333;
+  }
+  
+  .menu-page {
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    text-align: center;
+  }
+  
+  .menu-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+  }
+  
+  /* Menu Items Grid */
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  /* Individual Item */
+  .menu-item {
+    background-color: #fff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .menu-item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .menu-item-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: var(--text-color);
+  }
+  
+  .menu-item-description {
+    font-size: 0.9rem;
+    color: var(--description-color);
+    margin: 0.5rem 1rem;
+  }
+  
+  .menu-item-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 1rem 0;
+  }
+  
+  .menu-item-actions {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .menu-item-ingredients ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .menu-item-button {
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: var(--button-background-color);
+  }
+  
+  .menu-item-button:hover {
+    background-color: var(--button-background-color);
+    color: var(--button-hover-color);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu-items {
+      grid-template-columns: 1fr;
+    }
+  }
+  

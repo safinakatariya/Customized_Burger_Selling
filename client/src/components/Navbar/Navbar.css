@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #ff5722;
+  --text-color: #333;
+  --background-color: #fff;
+  --font-family: 'Arial', sans-serif;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: var(--background-color);
+  box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: var(--primary-color);
+}
+
+/* Auth Buttons */
+.auth-buttons button {
+  margin-left: 10px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .auth-buttons {
+    margin-top: 10px;
+  }
+}
